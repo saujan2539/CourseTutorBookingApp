@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Course Tutor Booking</string>
+    <string name="home_title">Course Tutor Booking</string>
+    <string name="home_subtitle">Find a course or tutor and book your session.</string>
+    <string name="welcome_format">Welcome, %1$s</string>
+    <string name="view_courses">Browse Courses</string>
+
+    <string name="course_list_title">Courses</string>
+    <string name="course_list_subtitle">Choose a subject to see its tutors and book a session.</string>
+    <string name="course_not_found">Course not found.</string>
+
+    <string name="tutor_list_title">Tutors for %1$s</string>
+    <string name="tutor_list_subtitle">Tap a tutor to book a session.</string>
+    <string name="tutor_not_found">Tutor not found.</string>
+
+    <string name="booking_title">Book a Session</string>
+    <string name="selected_tutor_format">%1$s  %2$s (%3$s)</string>
+    <string name="booking_rule_format">This tutor is available for up to %1$d days.</string>
+    <string name="applicant_name">Your Name</string>
+    <string name="topic">Topic</string>
+    <string name="booking_period">Book for</string>
+    <string name="day_format">%1$d day(s)</string>
+    <string name="submit_booking">Confirm Booking</string>
+    <string name="enter_name">Please enter your name.</string>
+    <string name="enter_topic">Please enter the topic.</string>
+
+    <string name="complete_title">Booking Confirmed</string>
+    <string name="complete_subtitle">Your session with the tutor has been booked.</string>
+    <string name="complete_tutor_format">%1$s  %2$s</string>
+    <string name="complete_applicant_format">Student: %1$s</string>
+    <string name="complete_topic_format">Topic: %1$s</string>
+    <string name="complete_period_format">Booked for: %1$d day(s)</string>
+    <string name="back_to_courses">Back to Courses</string>
+    <string name="back_to_home">Back to Home</string>
+</resources>

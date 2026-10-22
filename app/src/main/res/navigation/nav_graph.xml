@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.campustutor.app.ui.home.HomeFragment"
+        android:label="HomeFragment">
+        <argument
+            android:name="userName"
+            app:argType="string"
+            android:defaultValue="Student" />
+        <action
+            android:id="@+id/action_homeFragment_to_courseListFragment"
+            app:destination="@id/courseListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/courseListFragment"
+        android:name="com.campustutor.app.ui.list.CourseListFragment"
+        android:label="CourseListFragment">
+        <action
+            android:id="@+id/action_courseListFragment_to_tutorListFragment"
+            app:destination="@id/tutorListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tutorListFragment"
+        android:name="com.campustutor.app.ui.tutor.TutorListFragment"
+        android:label="TutorListFragment">
+        <argument
+            android:name="courseId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="courseName"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/action_tutorListFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.campustutor.app.ui.booking.BookingFragment"
+        android:label="BookingFragment">
+        <argument
+            android:name="tutorId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="courseName"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/action_bookingFragment_to_completeFragment"
+            app:destination="@id/completeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/completeFragment"
+        android:name="com.campustutor.app.ui.complete.CompleteFragment"
+        android:label="CompleteFragment">
+        <argument
+            android:name="tutorId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="applicantName"
+            app:argType="string"
+            android:defaultValue="Not entered" />
+        <argument
+            android:name="topic"
+            app:argType="string"
+            android:defaultValue="Not entered" />
+        <argument
+            android:name="bookingDays"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+
+</navigation>
