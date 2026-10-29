@@ -30,6 +30,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 R.id.action_homeFragment_to_courseListFragment
             )
         }
+
+        binding.btnMyBookings.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_homeFragment_to_bookingListFragment
+            )
+        }
     }
 
     override fun onDestroyView() {

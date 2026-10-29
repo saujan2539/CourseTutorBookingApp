@@ -9,5 +9,7 @@ object NavKeys {
     const val TUTOR_ID = "tutorId"
     const val USER_NAME = "userName"
     const val TOPIC = "topic"
+    const val BOOKING_DATE = "bookingDate"
+    const val BOOKING_TIME = "bookingTime"
     const val BOOKING_DAYS = "bookingDays"
 }

@@ -14,6 +14,6 @@ data class Tutor(
     val name: String,
     val subject: String,
     val major: String,
-    val maxBookingDays: Int,
+    val maxBookingMinutes: Int,
     val description: String
 )

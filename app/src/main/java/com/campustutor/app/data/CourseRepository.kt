@@ -11,21 +11,24 @@ import kotlin.collections.find
 object CourseRepository {
 
     val courseList: List<Course> = listOf(
-        Course(1, "Java Programming", "CS101", "☕", "Learn core Java: syntax, classes, and programming flow."),
-        Course(2, "Web Development", "WEB201", "🌐", "Build modern websites with HTML, CSS, and JavaScript."),
-        Course(3, "Android App Development", "APP301", "📱", "Create Android apps with Kotlin, Fragments, and Room."),
-        Course(4, "Linux Essentials", "LIN110", "🐧", "Get comfortable with the Linux command line and shell scripts."),
-        Course(5, "Database Design", "DB100", "🗄️", "Model data and write SQL with MySQL and Room SQLite.")
+        Course(1, "Front-end Framework", "WEB301", "🎨", "Building interactive user interfaces with modern front-end frameworks."),
+        Course(2, "Full Stack Application", "FS401", "🧩", "Developing complete web applications covering both front-end and back-end."),
+        Course(3, "Kubernetes", "K8S310", "☸️", "Container orchestration and managing cloud deployments with Kubernetes."),
+        Course(4, "Capstone", "CAP400", "🚀", "Team-based project integrating everything learned into a working product."),
+        Course(5, "AI App", "AI301", "🤖", "Building Android apps powered by AI features and models."),
+        Course(6, "Deep Learning Framework Advanced", "DL450", "🧠", "Hands-on work with advanced deep learning frameworks and models.")
     )
+
 
     fun findById(id: Int): Course? = courseList.find { course -> course.id == id }
 
     val tutorList: List<Tutor> = listOf(
-        Tutor(1, 1, "Prof. Han", "Java Programming", "Software Engineering", 3, "Specialist in Java fundamentals and object-oriented design."),
-        Tutor(2, 2, "Prof. Yoon", "Web Development", "Web Engineering", 5, "Front-end and full-stack web tutor with hands-on projects."),
-        Tutor(3, 3, "Prof. Kwon", "Android App Development", "Mobile Engineering", 4, "Kotlin, Jetpack Navigation, and Room database expert."),
-        Tutor(4, 4, "Prof. Seo", "Linux Essentials", "Systems Engineering", 6, "Command-line and shell scripting coach for beginners."),
-        Tutor(5, 5, "Prof. Moon", "Database Design", "Data Engineering", 4, "SQL, data modeling, and Room ORM tutoring.")
+        Tutor(1, 1, "Sang Hun Chun", "Front-end Framework", "Software Engineering", 180, "Front-end development and interactive UI specialist."),
+        Tutor(2, 2, "Jang YongMi", "Full Stack Application", "Full Stack Development", 180, "Full stack web application expert covering client and server."),
+        Tutor(3, 3, "Sang Hun Chun", "Kubernetes", "Cloud Engineering", 180, "Kubernetes and container orchestration coach."),
+        Tutor(4, 4, "Hongsub An", "Capstone", "Software Engineering", 180, "Guides capstone teams to plan and build their final project."),
+        Tutor(5, 5, "Seo Youn Kyoung", "AI App", "AI & Mobile Engineering", 180, "Teaches how to add AI features to Android apps."),
+        Tutor(6, 6, "Hongsub An", "Deep Learning Framework Advanced", "AI Engineering", 180, "Explains advanced deep learning frameworks and models.")
     )
 
     fun findTutorsByCourse(courseId: Int): List<Tutor> =

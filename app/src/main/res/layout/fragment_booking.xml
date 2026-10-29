@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:minWidth="0dp"
-            android:text="‹ @string/back_to_courses"
+            android:text="‹ Back"
             android:textSize="16sp" />
 
         <TextView
@@ -76,6 +76,32 @@
                 android:inputType="textMultiLine"
                 android:maxLines="3"
                 android:minLines="2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/booking_date">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_booking_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/booking_time">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_booking_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView

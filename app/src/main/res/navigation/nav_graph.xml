@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_homeFragment_to_courseListFragment"
             app:destination="@id/courseListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bookingListFragment"
+            app:destination="@id/bookingListFragment" />
     </fragment>
 
     <fragment
@@ -80,6 +83,15 @@
             android:name="bookingDays"
             app:argType="integer"
             android:defaultValue="1" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingListFragment"
+        android:name="com.campustutor.app.ui.bookings.BookingListFragment"
+        android:label="My Bookings">
+        <action
+            android:id="@+id/action_bookingListFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
     </fragment>
 
 </navigation>

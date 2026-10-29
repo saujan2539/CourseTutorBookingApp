@@ -18,7 +18,11 @@ data class BookingEntity(
     val studentName: String,
     /* topic */
     val topic: String,
-    /* booked duration in days */
+    /* booked date, e.g. 2026-11-05 */
+    val bookingDate: String,
+    /* booked start time, e.g. 14:00 */
+    val bookingTime: String,
+    /* booked duration in minutes */
     val bookingDays: Int,
     /* booking status */
     val status: String
